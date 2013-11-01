@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My first Three.js app</title>
+    <link rel="stylesheet" href="styles/screen.css" />
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/canvas.js"></script>
+</head>
+
+<body>
+    <header>
+        <hgroup>
+            <h1>Canvas test</h1>
+        </hgroup>
+    </header>
+
+    <div id="trackpos">
+        0, 0
+    </div>
+
+    <div id="clickpos">
+        0, 0
+    </div>
+
+    <div class="buttons">
+        <button type="button" onclick="drawLines();">draw</button>
+        <button type="button" onclick="resetCanvas();">reset</button>
+    </div>
+
+    </br>
+    <div class="center">
+        <canvas id="c" witdh="800" height="600"></canvas>
+    </div>
+    <script>
+    initCanvas();
+    </script>
+
+</body>
+
+</html>
